@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import TodoInput from './TodoInput'
+import TodoItem from './TodoItem'
+import 'normalize.css'
+import './reset.css'
 
 class App extends Component {
   constructor(props) {
@@ -8,13 +11,14 @@ class App extends Component {
     this.state = {
       newTodo: 'test',
       todoList: [
-        {id:1, title: 'first'}
+        {id:1, title: 'first'},
+        {id:2, title: 'second'}
       ]
     }
   }
   render() {
     let todos = this.state.todoList.map((item, id) => 
-      <li>{item.title}</li>
+        <TodoItem key={id} todo={item} />
     )
     return (
       <div className="App">
