@@ -13,5 +13,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/squall1744/todo-list-project"
+  "homepage": "https://squall1744.github.io/todo-list-project"
 }
